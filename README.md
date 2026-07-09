@@ -2,17 +2,13 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-Portable runtime helpers for OpenCode skills. The core tool is `venv-manager.sh`:
-one [uv](https://github.com/astral-sh/uv)-managed virtualenv per skill.
+Portable runtime helpers for OpenCode skills. The core tool is `venv-manager.sh`: one [uv](https://github.com/astral-sh/uv)-managed virtualenv per skill.
 
-**Attribution:** this repository is **original to RAFA** (not a fork). It exists
-so Python-heavy skills under `~/.opencode/skills/` do not share a fragile global
-interpreter.
+**Attribution:** this repository is not a fork. It exists so Python-heavy skills under `~/.opencode/skills/` do not share a fragile global interpreter.
 
-**Suite hub:** [opencode-methodology](https://github.com/openrafa/opencode-methodology)
-→ [Install from scratch](https://github.com/openrafa/opencode-methodology/blob/main/docs/install-from-scratch.md).
+**Suite hub:** [opencode-methodology](https://github.com/openrafa/opencode-methodology) → [Install from scratch](https://github.com/openrafa/opencode-methodology/blob/main/docs/install-from-scratch.md).
 
-## Getting started (from zero)
+## Getting started
 
 1. Install OpenCode and [`uv`](https://github.com/astral-sh/uv) (`UV_BIN` optional).
 2. Clone and install the helper into the OpenCode config tree:
@@ -40,18 +36,15 @@ bash ~/.config/opencode/.scripts/venv-manager.sh rewire <skill-name>
 ~/.config/opencode/
 ├── .scripts/
 │   └── venv-manager.sh
-└── .venvs/                 # generated local state (gitignored by you)
+└── .venvs/                 # generated local state, gitignored by you
     └── <skill-name>/
 ```
 
-Defaults: `VENV_ROOT=~/.config/opencode/.venvs`,
-`SKILL_ROOT=~/.opencode/skills`. See [`docs/python-isolation.md`](docs/python-isolation.md)
-([中文](docs/python-isolation.zh-CN.md)).
+Defaults: `VENV_ROOT=~/.config/opencode/.venvs`, `SKILL_ROOT=~/.opencode/skills`. See [`docs/python-isolation.md`](docs/python-isolation.md) ([中文](docs/python-isolation.zh-CN.md)).
 
 ## Why
 
-Global site-packages make skills conflict and failures hard to diagnose. One
-venv per skill + a generated wrapper keeps isolation reversible.
+Global site-packages make skills conflict and failures hard to diagnose. One venv per skill + a generated wrapper keeps isolation reversible.
 
 ## Docs
 
@@ -63,10 +56,10 @@ venv per skill + a generated wrapper keeps isolation reversible.
 
 ## Related
 
-- Example of a Python-heavy skill name (not bundled): [`examples/kami.md`](examples/kami.md)
+- Example of a Python-heavy skill name, not bundled: [`examples/kami.md`](examples/kami.md)
 - Wiki skills that may need isolation: [opencode-obsidian-wiki](https://github.com/openrafa/opencode-obsidian-wiki)
 
 ## License & credit
 
 MIT — Copyright (c) 2026 [Cyame](https://github.com/Cyame). See [`LICENSE`](LICENSE).
-This runtime helper is original to this suite.
+This runtime helper is written for this suite.
