@@ -2,7 +2,7 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-Portable runtime helpers for OpenCode skills. The core tool is `venv-manager.sh`: one [uv](https://github.com/astral-sh/uv)-managed virtualenv per skill.
+Runtime helpers for OpenCode skills, RAFA-original internals. The core tool is `venv-manager.sh`: one [uv](https://github.com/astral-sh/uv)-managed virtualenv per skill.
 
 **Attribution:** this repository is not a fork. It exists so Python-heavy skills under `~/.opencode/skills/` do not share a fragile global interpreter.
 

@@ -2,7 +2,7 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-面向 OpenCode skills 的可移植运行时辅助工具。核心是 `venv-manager.sh`：每个 skill 一个由 [uv](https://github.com/astral-sh/uv) 管理的虚拟环境。
+面向 OpenCode skills 的运行时辅助工具，RAFA 自研内部件。核心是 `venv-manager.sh`：每个 skill 一个由 [uv](https://github.com/astral-sh/uv) 管理的虚拟环境。
 
 **归属：** 本仓库不是 fork。目的很直接：让 `~/.opencode/skills/` 下依赖 Python 的 skill 不再挤在同一个脆弱的全局解释器里。
 
